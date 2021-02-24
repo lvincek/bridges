@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Welcome to Bridges to Manila</title>
+
+		<link rel="stylesheet" type="text/css">
+
+		<link href="https://fonts.googleapis.com/css?family=Questrial|Arvo" rel="stylesheet">
+
+
+		<link rel="stylesheet" type="text/css" href="style/page.css">
+		<link rel="stylesheet" type="text/css" href="style/header.css">
+		<link rel="stylesheet" type="text/css" href="style/body.css">
+		<link rel="stylesheet" type="text/css" href="style/footer.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+	</head>
+
+	<body>
+
+
+
+		<div id="header_container" class="container">  
+			<div id="header">
+
+	 			<img id="logo" src='images/logo.jpg'>
+
+
+				<div style="clear: right"></div>
+
+				<ul class="nav left">
+					<li onclick="$.get('./html/about.html', callBack );" class="right_wall">About Us</li>
+					<li onclick="$.get('./html/organization.html', callBack );">Organization</li>
+
+					<div style="clear: right"></div>
+
+					<li onclick="$.get('./html/donate.html', callBack );" class="right_wall donate_button">Donate</li>
+					<li onclick="$.get('./html/connect.html', callBack );">Connect</li>
+					<li onclick="$.get('./html/challenges.html', callBack );" >Challenges</li>
+				</ul>
+
+				<ul class="nav right">
+
+					<li onclick="$.get('./html/donate.html', callBack );" class="right_wall donate_button">Donate</li>
+					<li onclick="$.get('./html/connect.html', callBack );">Connect</li>
+					<li onclick="$.get('./html/about.html', callBack );">About Us</li>
+					<li onclick="$.get('./html/organization.html', callBack );">Organization</li>
+					<li onclick="$.get('./html/challenges.html', callBack );">Challenges</li>
+				</ul>
+
+				<div style="clear: right"></div>
+
+			</div>
+			<div class=bar></div>
+		</div>
+
+		<div id="body_container" class="container">  
+			<div id="body">
+				<div class="splash">
+
+				</div>
+			</div>
+		</div>
+
+		
+		<div id="footer_container" class="container">  
+			<div class="footer" id="footer_1">
+				<ul>
+					<li> 3042 Ebano Drive </li>
+					<li> Walnut Creek, CA 94598 </li>
+					<li> bridgestomanila@gmail.com </li>
+				</ul>
+					
+			</div>
+
+			<div class="footer" id="footer_2">
+				<ul>
+					<li class="right_wall"> 3042 Ebano Drive </li>
+					<li class="right_wall"> Walnut Creek, CA 94598 </li>
+					<li> bridgestomanila@gmail.com </li>
+				</ul>
+					
+			</div>
+
+		</div>
+
+		<script>
+				let callBack = function(result) {
+					$("#body").html(result);
+					// $("#body").scrollTop(0);
+					// $("body").scrollTop(0);
+					// $("#body_container").scrollTop(0);
+					// $(".container").scrollTop(0);
+
+					// $("#body").position({top: "0px"});
+
+					window.scrollTo(0, 0);
+
+					// $(".container").scrollTop(0);
+					// $("#body_container").scrollTop(0);
+					// $(this).scrollTop(0);
+
+					// console.log("scroll:", $("body").scrollTop());
+					// console.log("position:", $("body").position());
+
+					// // console.log("scroll:", $(".container").scrollTop());
+					// // console.log("position:", $(".container").position());
+
+					// // console.log("scroll:", $("#body_container").scrollTop());
+					// // console.log("position:", $("#body_container").position());
+					// // console.log("offset:", window.pageYOffset);
+
+					// window.pageYOffset = 0;
+					// $("body").position({top: "0px", left: "0px"});
+		
+				};		
+
+		</script>
+	</body>
+</html>
